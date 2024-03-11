@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  align-items: center;
+  background: linear-gradient(to right, rgba(125, 165, 104, 0.75), rgba(39, 50, 119, 0.75));
+  display: flex;
+  gap: 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.5s ease, height 0.5s ease;
+}
+
+.image {
+  margin-top: 120px;
+  width: 100%;
+}
+
+.image1 {
+  width: 50%;
+  height: 20%;
+  margin-left: 50px;
+  margin-top: 40px;
+
+}
+
+.image2 {
+  width: 50%;
+  height: 20%;
+  margin-right: 50px;
+  margin-top: 75px;
+}
+
+.homeBtn {
+  position: relative;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.video {
+  width: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 60px;
+  box-shadow: 0px 0px 200px rgb(34, 42, 82);
+}
+.videoh2{
+  color: #ffffff;
+}
+
+.videoh2-container{
+  background: linear-gradient(to right, rgba(125, 165, 104, 0.75), rgba(39, 50, 119, 0.75));
+  text-align: center;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  filter: blur(0px);
+  height: 45px;
+  transition: top 0.5s ease, height 0.5s ease;
+}
+
+.progress {
+  position: fixed;
+  top: 45px; /* Adjust this value based on your header height */
+  left: 0;
+  width: 0;
+  height: 8px;
+  background-color: rgba(41, 52, 117, 0.6); /* Change color as needed */
+  z-index: 9999;
+  transition: width 0.3s ease;
+}
+
+.header .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter", monospace;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  width: 70%;
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: "Inter", monospace;
+  line-height: 1;
+  background: white;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Space Mono", monospace;
+}
+
+h3 {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 30px;
+  color: #7da568;
+}
+
+p {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+nav {
+  text-align: right;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 25px;
+  justify-content: space-evenly;
+}
+
+nav ul li:last-child {
+  margin-right: 100;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: #293476;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+section {
+  margin-bottom: 200px;
+}
+
+section h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  color: #649b41;
+}
+
+
+section p {
+  font-size: 25px;
+  line-height: 1.2;
+  justify-content: space-evenly;
+  font-weight: normal;
+  color: #426b28;
+
+}
+
+article {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.content-section1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+  margin-right: 0px;
+  margin-top: 50px;
+}
+
+.content-section {
+  margin-top: 100px;
+  width: 70%;
+  margin-left: 270px;
+}
+
+.content-section2 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.content-section article {
+  align-items: center;
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 90%; /* Adjust as needed */
+  border-radius: 40px;
+  box-shadow: 0px 0px 100px rgb(34, 42, 82);
+  margin-bottom: 20px;
+}
+
+.content-section article p {
+  color: #293476;
+}
+
+.content-section article h2 {
+  color: #293476;
+}
+
+.content-section article h3 {
+  color: #293476;
+}
+
+.content-section1 article {
+  align-items: center;
+  flex: 1;
+  margin-left: 0px;
+  margin-right: 50px;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 100px rgb(120, 166, 98);
+  margin-bottom: 20px;
+}
+
+.content-section2 article {
+  flex: 1;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0px 0px 200px rgb(190, 215, 174);
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 17px;
+  font-family: "Space Mono", monospace;
+
+}
+
+footer {
+  background: linear-gradient(to right, rgba(125, 165, 104, 0.75), rgba(39, 50, 119, 0.75));
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
